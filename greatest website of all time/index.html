@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>GWOAT</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+
+
+    <link rel="icon" href="favicon.png">
+
+<style>
+    body {
+        font-family: 'Oswald', sans-serif;
+        /* keep your other styles */
+    }
+
+    h1, h2, h3 {
+        font-family: 'Oswald', sans-serif;
+    }
+</style>
+
+<button id="scrollTopBtn" title="Go to top">⬆️</button>
+
+<style>
+  #scrollTopBtn {
+      position: fixed; /* stays in place */
+      bottom: 30px; /* distance from bottom */
+      right: 30px;  /* distance from side */
+      z-index: 100; /* above everything */
+      background-color: yellow;
+      color: black;
+      border: 3px solid black;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 18px;
+      font-weight: bold;
+      transition: 0.3s;
+  }
+
+  #scrollTopBtn:hover {
+      background-color: black;
+      color: yellow;
+  }
+
+  /* optional: hide button initially */
+  #scrollTopBtn.hidden {
+      display: none;
+  }
+</style>
+
+<script>
+  const scrollBtn = document.getElementById("scrollTopBtn");
+
+  // Show button after scrolling down 300px
+  window.onscroll = () => {
+      scrollBtn.classList.toggle("hidden", window.scrollY < 300);
+  };
+
+  // Scroll to top smoothly when clicked
+  scrollBtn.onclick = () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+</script>
+      <style>
+        /* Button styling */
+        #disclaimerBtn {
+            background-color: yellow;
+            color: black;
+            font-weight: bold;
+            border: 3px solid black;
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        #disclaimerBtn:hover {
+            background-color: black;
+            color: yellow;
+            transition: 0.3s;
+        }
+
+        /* Announcement styling */
+        #announcement {
+            color: green;
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+          /* Background gradient for the whole page */
+        body {
+            background: linear-gradient(to bottom right, red, orange);
+            color: white; /* Makes all text white */
+            font-family: Arial, sans-serif;
+            line-height: 1.5;
+            padding: 20px;
+        }
+
+        /* Headings styling */
+        h1, h2, h3 {
+            color: white;
+        }
+
+        /* Button styling */
+        #disclaimerBtn {
+            background-color: yellow;
+            color: black;
+            font-weight: bold;
+            border: 3px solid black;
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        #disclaimerBtn:hover {
+            background-color: black;
+            color: yellow;
+            transition: 0.3s;
+        }
+
+        /* Announcement styling */
+        #announcement {
+            color: lime; /* A bright green that pops on red/orange */
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+    </style>
+
+    <script>
+    console.log("⚠️ WARNING: You are now entering forbidden knowledge.");
+    console.log("Fact #1: Octopuses have three hearts.");
+    console.log("Fact #2: Bananas are berries, strawberries are not.");
+    console.log("Fact #3: Quantum teleportation ≠ Star Trek teleportation.");
+    console.log("Fun reminder: You willingly opened the console.");
+    console.log("Did you know? The brain named itself.");
+    console.log("There is no Easter egg. Or is there?");
+    console.log("If you're reading this, you're already smarter.");
+    console.log("Error 404: Sanity not found.");
+    console.log("Congratulations. You found absolutely nothing useful.");
+</script>
+</head>
+<body>
+    <center>
+        <h1>GWOAT - Greatest Website Of All Time</h1>
+        <nav>
+  <a href="index.html">Home</a> |
+  <a href="gwoat2.html">GWOAT V2</a> |
+   <a href="gwoat3.html">Content & Distribution</a> |
+   <a href="torture/index.html">My Torture to myself</a>
+</nav>
+        <br><button id="nightModeBtn" style="
+    background: white; 
+    color: black; 
+    font-weight: bold; 
+    padding: 10px 20px; 
+    border: 3px solid black; 
+    cursor: pointer;
+    margin-left: 10px;
+">
+    NIGHT MODE
+</button>
+
+<script>
+    const nightBtn = document.getElementById("nightModeBtn");
+    let night = false; // Track state
+
+    nightBtn.onclick = () => {
+        night = !night; // Toggle state
+        if (night) {
+            document.body.style.background = "linear-gradient(to bottom right, black, darkgrey)";
+            nightBtn.textContent = "DAY MODE"; // Toggle text
+        } else {
+            document.body.style.background = "linear-gradient(to bottom right, red, orange)";
+            nightBtn.textContent = "NIGHT MODE"; // Toggle back
+        }
+    };
+</script><br>
+        <h3>Hello, fellow mortals. Ever wondered what lies beyond simple and rational thinking?
+             Well, GWOAT is just for you.</h3>
+    </center>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h2>But what will you learn? The possibilities are endless.</h2>
+    <br>
+    <hr>
+    <br>
+    <h3>You are going to be learning philosophy, physics, math, and sometimes other random pieces of
+        useful information as well. 
+    </h3>
+    <br>
+    <br>
+    <h3>So what are we wainting for? Let the info-dumping begin!</h3><hr>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br><br>
+    <br>
+    <br>
+    <br>
+    <br>
+       <center>
+        <button id="disclaimerBtn">DISCLAIMER</button>
+        <p id="announcement" style="display:none;">You will be smarter after reading all of that!</p><br><br>
+    
+    <button id="termsBtn" style="background: black; color: yellow; font-weight: bold; padding: 10px 20px; border: 3px solid yellow; cursor: pointer;">
+        TERMS AND CONDITIONS
+    </button>
+
+
+<div id="termsBox" style="display:none; background: black; color: yellow; border: 3px solid yellow; padding: 20px; margin: 20px auto; width: 80%; font-family: Arial, sans-serif;">
+    <h3>Terms and Conditions</h3>
+    <p><strong>1. Legal Obligations:</strong> Copying, distributing, or attempting to reproduce any content on this site without explicit permission is strictly prohibited. Violators may face consequences that extend beyond the mundane boundaries of the internet. Proceed at your own risk.</p>
+    <p><strong>2. Intellectual Enlightenment:</strong> By reading this site, you acknowledge that your brain may experience sudden boosts of intelligence, wisdom, or random flashes of existential understanding. Side effects may include curiosity, deep thoughts, or occasional awe at the universe.</p>
+    <p><strong>3. Cosmic Responsibility:</strong> Any misuse of knowledge obtained here — whether for pranks, chaos, or trivial pursuits — is frowned upon. The cosmic balance of fun and seriousness must be maintained at all times. You are now officially a custodian of forbidden knowledge.</p>
+    <p><strong>4. Violations:</strong> Breaching these terms may result in immediate moral shame, guilt, or, in extreme cases, the wrath of the universe. We are not responsible for side effects such as overthinking, laughter, or unexpected enlightenment.</p>
+    <p><strong>5. Enjoy Responsibly:</strong> This website is intended for curious minds seeking both entertainment and education. Proceed with caution, savor the content, and remember: knowledge is power, but fun is mandatory.</p>
+</div>
+
+<script>
+    const termsBtn = document.getElementById("termsBtn");
+    const termsBox = document.getElementById("termsBox");
+
+    termsBtn.onclick = () => {
+        termsBox.style.display = termsBox.style.display === "none" ? "block" : "none";
+        termsBtn.textContent = termsBox.style.display === "block" ? "HIDE TERMS AND CONDITIONS" : "TERMS AND CONDITIONS";
+    };
+</script>
+    
+    </center>
+
+    <script>
+        // JavaScript to show announcement when button is clicked
+        const btn = document.getElementById("disclaimerBtn");
+        const announcement = document.getElementById("announcement");
+
+        btn.addEventListener("click", () => {
+            announcement.style.display = "block";
+        });
+    </script>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br><br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1>Teleportation? Not so fast:-</h1>
+
+
+<h3>Human teleportation is almost impossible, the reasons being simple enough for a toddler to understand. If the toddler has a Harvard brain.<br><br>
+
+Scientists have achieved teleportation of information. But there is a huge difference between information and literal matter. The teleportation was just some information over 27 miles, record being 89 miles, nothing else. It was only the transfer of some quantum particles. There are many flaws in this as well, corresponding to the teleportation for humans.<br><br>
+
+How much energy will be used?<br>
+How much would it cost?<br>
+Who comes out in the end?<br>
+Will it actually be executed?<br>
+How dangerous is it?<br>
+What happens to your memory?<br><br>
+
+How much energy will be used?<br>
+An unbelievable amount of energy will be required to perform this task. We are talking about trillions of particles, or waves worth of data, possibly quadrillions. Possibly Quintillions, we don’t know it yet. And that much energy being used to perform such a task would not be sufficient as well. Might take trillions of years to just get to the other side. And we also don’t know if it is even safe or not.<br><br>
+
+How much would it cost?<br>
+One word:- Trillions, possibly quadrillions. Ask Elon Musk to sponsor you. He might send X Æ A-12 through the machine first.<br><br>
+
+Who comes out in the end?<br>
+Real question, no random crap. Is it you, or a clone of you? Because technically it is a cluster of YOUR atoms, but taken into consideration, it does sound similar to cloning. But we don’t have the power to create matter for cloning - yet. Or do we? We do, but only in some rare cases can energy create matter for us. So even cloning is difficult. Might write another essay for cloning just to keep things interesting. Still takes a lot of energy.<br><br>
+
+Will it actually be executed?<br>
+‘It’ is referred to as the process, not you, who is teleported, probably. The process is huge, literally. The way I would comprehend it to people is, imagine a chrome tab in a computer made in the 1820s. Yes, we are that far away from the technology able to make it happen. But the question arises, even with the power to do it, will it be executed? Because at first, in theory, it should work, if done correctly. But quantum physics likes to play with your mind, so we are never sure unless we test it ourselves. So if you’re in hope of losing a brave guy, for potentially creating history, you’re in for a treat, that is until the process is executed. Good luck campaigning for it.<br><br>
+
+How dangerous is it?<br>
+It is like asking a toddler to survive the Romain Grosjean crash back in the 2020 Bahrain Grand Prix. But the difference is that Romain was trained to survive crashes like that, and a toddler isn’t. See the difference? Welcome to Quantum Physics, you are bound to listen to these explanations as if they are just a huge list of a sandwich order in a Subway. The amount of danger this whole teleportation contains is a lot to process, even for intellectuals. This is far beyond human reach, at least for the next 100 years or so. Or a 1,000 years, or even 10,000 years, we don’t know. The danger is what keeps it alive with physicists and scientists in general. So if you want to be the bravest man or woman in the world, welcome aboard. Just be safe. Or let the scientists experiment with lab rats, for the time being.<br><br>
+
+What happens to your memory?<br>
+This is my favorite question no other article dares to ask. Why? It is more biology-based than physics. But that doesn’t stop me from explaining it. As far as my knowledge in biology goes, memories are like electrical signals. Not quite it, but similar to it. So, if we were to deconstruct a human, particle by particle, and rebuild it again, exactly as it was, regardless of time, it won’t have any memories, or at least won’t remember much. Because for starters, 2 current signals for me might be cars. But for you it might be paper, or water, something else entirely. So while it may seem like a mission success if we teleport a human, but if the memories are gone, the procedure was nothing more than the bad ending of Superman V Batman. In simpler words, the process failed.<br><br>
+
+Conclusion<br><br>
+
+We, or more like I, have talked about how human teleportation should work and how many flaws I could find and how they limit us. I would like to conclude this in a question not many might expect. This is related to the memory flaw. Doesn’t the memory flaw remind you of a branch of physics? I’ll give the answer without the explanation. It is quantum physics. Go on, have your guess on how I came up with this and enjoy the rest of your day.<br>
+
+</h3>
+<br><hr><br>
+<h1>Time travel? Not so fast(pun intended)</h1><br><br>
+<h3>This document will give you the perfect tutorial for time travelling(except flaws and consequences) and your way to change the world.<br><br>
+
+What is time travelling?<br>
+How to time travel into the future?<br>
+How to time travel into the past?<br>
+Conclusion<br><br>
+
+What is time travelling?<br><br>
+
+According to the theory of relativity, “time travel” is the phenomenon where an object experiences a different passage of time than a stationary observer, allowing for travel to the future by experiencing time at a slower rate through high velocity or intense gravity. Essentially, just moving fast can dilate time which can make speeds slower of the stationary, and essentially travel through time. Or going to Jupiter to get stronger gravity to time travel.<br><br>
+
+This is only for travelling into the future, and the explanation for time travelling into the past is later in the document.<br><br>
+
+How to time travel into the future?<br><br>
+
+Easy example:- Elon twins, he sends one to space and one is staying with him. The one who goes to space is going for ten years INSIDE THE SPACE SHIP. Basically, the space ship will experience 10 years in space. The ship accelerates for 5 years and then comes back for the next 5 to Earth. The kid in the ship ages 10 years perfectly, but when he reaches Earth, he will see that his twin is 22 years old, which sounds insane but in theory, this is almost exactly what will happen. This phenomenon is called time dilation, where the intense gravity, or sometimes even speed, the more time goes slow for you, but time for everything else just goes really fast. So when the space twin comes in his ‘10’ years, the earth ages about 22, as time is slower for the ship. The same would happen if you get inside a black hole.<br><br>
+
+How to time travel into the past?<br><br>
+
+This one is a bit… difficult to process. According to the theory of relativity, and with some crazy hypothesis, in order to go back in time, you would have to travel faster than light(FTL). Essentially, to be FTL, you would need zero mass and nothing stopping you to accelerate. The speed of light is 299,792,458 m/s or represented by c. Let me explain in better words. The faster you go, the slower the stationary things feel for you. So if we travel at c, they will look stationary, then if we go faster, they would look like they are doing the moves they did before, essentially traveling back in time. This is a hypothesis and there is no evidence or even a way to prove this is physically possible. So if you want to travel back in time, go to space for 50 years, then come back to earth, and see if some smart guy has found a way to travel faster than light, and then travel back in time. The flaws of going back in time? Consequences and paradoxes(not discussed in this document).<br><br>
+
+Conclusion<br><br>
+
+Time travelling is a phenomenon where an object experiences a different passage of time, possible by intense gravity or intense speeds. There are two ways to time travel:- Go fast, and go FTL. One is possible with a lot of money, and one is not physically possible. The faster you move, the slower the other stationary objects feel.</h3>
+<br><hr><br>
+<h1>Measuring something? Not so fast</h1>
+<h3>Measurement can get real hard. How? You only have to run 3.1 miles to go 5 kms, easy right? Not in a million years. Measurement is way harder. Try measuring a photon using double slits. You’ll give up quite easily, and I just know it.<br><br>
+
+Schrodinger’s Cat:-<br><br>
+
+Who is Schrodinger, and who is his cat? Schrodinger was an Austrian-Irish quantum physicist, who has contributed A LOT in the field. Now who is his cat? The cat doesn’t exist, or does it? Schrodinger made an analogy. He has a cat in a box and he is either feeding it and keeping it alive, or the cat is dead. We don’t know it. Quantum physics is summarized in this one simple analogy. We can never know the pattern or momentum, or even if we do, we won’t be able to measure it. Because if we do, we lose the momentum as well(better explained in Heisenberg’s Uncertainty Principle).<br><br>
+
+If we see if the cat is dead, we lose the whole point of the experiment, or do we(see what I did there)? We can use the data to graph, or more simply observe to come up with solutions and conclude whether our “experiment” worked or not. In this case, Schrodinger’s “experiment” worked. More people understand quantum physics just because of this experiment.<br><br>
+
+How is this useful? Superpositioning, my friends. This is better explained in the next part, Heisenberg’s uncertainty principle.<br><br>
+
+Heisenberg’s Uncertainty Principle:-<br><br>
+
+This is the main part. Let’s take the movement of a photon. Let’s also assume that the photon is moving in one straight direction that we don’t know about. Now, let’s measure it. We’ll find the measurement, but we won’t be able to conclude because we also need to find the momentum. Let’s assume we capture it using a motion blur, but hey, we lost its position. It could be anywhere, but it doesn’t matter anymore.<br><br>
+
+We can never have a photon(in quantum scale), in a definite position with its momentum or how it came there.<br><br>
+
+Let’s take an easier example that you might be familiar with. The infamous and the most hated(because it creates more harder parts) experiment ever:- The double slit experiment.<br><br>
+
+Take a lot of photons and shoot it to a wall with an obstacle in front of it. That obstacle has 2 slits, hence the name. If we shoot the photons one by one, we should be expecting 2 lines, right? Never. Photons, or anything in quantum physics, are waves. So they behave like waves and go in a specific position not measured or can’t be measured. Now since there are 2 slits, the pattern overlaps, creating a pattern.<br><br>
+<br><br>
+
+Conclusion:-<br><br>
+
+Quantum physics is, well… weirder than classic physics. You can never get exact measurements, like never. This obviously is the difference between classical physics and quantum physics. There are so many topics that quantum physics just makes things weird with the inaccuracy of measurements, and mostly probability that you sometimes feel like math is lying. What we see in math is sometimes not what we see in reality. For example, a really good theory to discuss about the inaccuracy is string theory.<br><br>
+
+Does this mean that math is false? No, never. Math is never false, but it's the way that quantum mechanics works that makes complex topics even more complicated just by existing.</h3>
+<br><hr><br>
+<h1>Why listening to music is NOT a bad thing</h1><br><br>
+<h3>Parents and traditionalists alike have often stated that any type of music can be very much excruciatingly usurp, or in most cases, terminate the total concentration of the complex human mind. As a professional student and son, I shall present a dissent of such a statement, or dare I say, a trite of words, to finally bring clarity over the misinterpreted and mediocre collection of words to put an end to this flawed convention of an idea. Why do parents say that listening to music while studying is a bad thing? Why only them? In this document, we shall discuss this topic further and elegantly come up with answers for the following questions.<br><br>
+
+Before we jump into the question as to why parents hate it, let’s just take a step back and analyze what in the world music is. If it is not abundantly clear by now, then let me tell you that there are a plethora of types of music, ranging from Hiphop to rock to even classical music. But why do we need to know the types of music to go forward into this topic? This is mainly because some of the types of music are not “study-friendly” as others, you’ll understand later as we fortify this argument further.<br><br>
+
+One reason as to why parents and even older generations of people alike, argue that music is bad when you are studying, is because of two reasons:- 1. They are not meant for it(you will understand later), and 2. They are taught that it is bad and they are just continuing the traditions. Let’s first look at reason 2, for now. Many parents are taught that music is bad when you are studying, directly from their parents. Why? Ask a grandparent. Many older generational people agree upon the fact that music is distracting, but they have not even tried it themselves, so why bother arguing if you yourself haven’t experienced it? And even if you have experienced it, there are ways as to why you would say as to why music is bad.<br><br>
+
+One way(for the experienced) music was bad during their trial was that they listened to the wrong type of music. What? Don’t worry, it’s easy to wrap your head around this. Rock music, known for its loud noises and low/high contradicting pitches, is VERY BAD for studying as it distracts the brain. The same goes for similar music. Why, and how? The contradicting notes, the loud noises, the rhythm, all of this is attractive to the brain, making your brain process not just this, but also the lyrical side of the music, making it hard for you to concentrate while you are trying to stay productive. This is the most common type of way as to why people just decide to agree on the trite statement as to why music is bad for you while working.<br><br>
+
+Well, how about you listen to the correct music? Simple psychology, BRAINS ARE DIFFERENT!!!! FOR GOD’S SAKE, GET IT RIGHT!!!! There are a plethora of things as to why certain brains process some things better than others. Some people find it really easy and sometimes even encouraging, or motivating, to be listening to music while working. Let me explain:- according to various studies, it is scientifically proven that certain people are more productive when listening to the correct form of music while working, because their brains are meant for it, their brains can take the correct notes and process them to be encouraging them to keep working, in short, making them more productive.<br><br>
+
+Now you might be asking me, what is the “correct, productive music” that I am referring to? According to science(Psychology), Lo-Fi beats, Jazz, heck, even classical music(Beethoven, Mozart) can make you productive, why? Simple reasons:- They have no lyrics which makes the brain not process more information, they have low notes(usually), also abridging information, they are usually instrumental(as seen in classical music), which also abridges information. Here, information refers to music, not work related information.<br><br>
+
+If you listen to this type of music, and find out that this does help you in concentrating and making you productive, then congratulations! Keep working with music, right music, and be educated more on this. Let me remind you to stay curious about this unflinching idea that crossed my head. And for parents:- You are somewhat, but definitely wrong about music making you not concentrate on work, and I am not going to condone hearing this from a parent ever again.</h3>
+    <br><hr><br>
+<h1>What is the true purpose of life and how close are we?</h1><br><br>
+<h3>The most asked question in philosophy, the question of purpose. Maybe the question isn’t about purpose itself, but whether life ever needs it. What are the hidden truths of the universe that we have never been able to answer? So many great philosophers have tried answering, but we truly do not have any answer to it.<br><br>
+
+But before we try to find purpose, let’s try to find who created us, let’s try to find what made us, and maybe we might be able to understand what our purpose may be. Many say that the Big Bang created us, many talk about their own religious beliefs of who created us. Maybe our true purpose is to find “God”. Einstein famously said, “The word God is for me nothing but the expression and product of human weaknesses,” which probably means that he knew what the purpose of humanity is. His last words were spoken in German, in front of a nurse who didn’t know German. He probably knew it, but just couldn’t really say it. Maybe Oppenheimer knew it. He once said to Einstein, “I think we did it,” which probably meant more than just the success of the nuclear bomb.<br><br>
+
+If our purpose truly is to find “God”, how close are we? We must be very close, considering that the Doomsday clock in New York says 89 seconds, right? RIGHT??? Not really. Think of every invention, every. Let’s take fire for an example, the most revolutionary and probably the best invention mankind could create, became a weapon. Any ore, any metal, that could’ve been used for farming or architecture, became a piece of weapon. Even nuclear energy, the one that could’ve revolutionized energy sources, became a weapon. No wonder Oppenheimer was crying and quoting the Bhagavad Gita, “Now I am become Death, the destroyer of Worlds” when the first nuclear test was a success. The more we invent, the closer we get, is also how we might go extinct. We are putting ourselves at risk.<br><br>
+
+If someone does, ever, find God, I am pretty sure he will be the last man alive…<br><br><br> But what if we live in a simulation?</h3><br><hr><br>
+
+<h1>We might be living in a simulation...</h1>
+<br><br>
+<h3>According to scientists, the universe is infinite, giving us only the imagination of the human mind as a barrier. This is slightly terrifying, as this just backs that aliens 100% exist and we might be in a simulation. But how does the existence of aliens make us think that we live in a simulation? There is a chance that aliens have better knowledge than us, better technology than us, they probably might be 4th dimensional beings, we just do not know. There is a tiny chance that the aliens have the technology to travel back in time, there is a chance that they have done it.<br><br>
+
+If the aliens have travelled back in time, they have probably messed up, one way or the other. There is a tiny chance of it. According to some hypothesis and research, if a paradox occurs, the universe collapses. If this truly happens, then the chances of us being in a simulation increases. The aliens have travelled back and they have messed up, they have created a paradox, putting the universe in great danger. Knowing that humans exist, they might have created a simulation altogether, and just “dropped” us in this. The aliens might have done something so disturbing that they have been forced to create an alternate reality for us humans to reside…<br><br>
+
+…or is this just a theory? Are we not in a simulation? This is what I call the questions that might never be answered, at least not till we are extinct. This is surprisingly very disturbing and concerning to humans, but we do not have any data to back it, so maybe we are not in a simulation.<br><br>
+
+Let’s travel 2 paragraphs back and remember something. The universe is infinite. There is a 100% chance of everything happening, we are not alone. The only limitation to this is the imagination of the human mind, something that is very complex and vast to ever end. We do live in a simulation, we also do not live in a simulation at the same time. Schrodinger’s problem, two things happen at once, this world is nothing but a whole mix of quantum physics and disturbing truth.<br><br>
+
+If we do live in a simulation, what truly is our purpose?<br>
+How purpose collapses in a simulation:-<br><br>
+
+According to me, our purpose in this universe is to find the “creator” or “God,” however, what would happen if we live in a simulation? It would mean nothing to us, we would essentially just be useless. If we live in a simulation, and if we find out that we do live in a simulation, then all the progress of mankind, and the progress in science, would just go to waste.</h3>
+<br><hr><br>
+<h1>The Possible truth of Reality</h1><br><br>
+<h3>Boredom is probably the best thing that can happen to anyone. One minute, you are staring at the ceiling while laying down on your bed, and the next, you are thinking like Plato. This is something that happened to me right now. This revealed a truth as to how imagination can shape reality on an atrocious level of thinking and understanding.<br><br>
+
+First, to explore how imagination can shape your entire vision of reality, we have to first look at how big the universe is. So, how big is the universe? Many sources say that the universe is infinite. Ok, we’ll just assume that the universe is infinite. Now what? Think about it, think about infinity. Infinity feeds on imagination. The more we can think and come up with, let it be fiction, or non-fiction, the more the value of infinity is. However, imagination also feeds on infinity. Think about it for a second. Imagination can be created by the idea of something more than what is presented. This is the Congruence Property of Equality; if a = b, then b = a. Now, substitute a and b with imagination and infinity. Infinity = imagination, and imagination = infinity.<br><br>
+
+We have established something that will be important later, and even right now. If both of them feed on each other, then if one stops entirely, then the universe stops. How did the universe get inside this idea of infinity and imagination? The universe is infinite, and infinity feeds on imagination, we are just substituting some values in this to form a conclusion that if one fails, the entirety fails. If we stop thinking, imagination stops, infinity stops, the universe stops. Thinking is key. Thinking is reality. Thinking is something that can make even the smallest of the smallest things, feel like the biggest.<br><br>
+
+Before we go any further, we need to know that not all thinking is the same. What do I mean when I say that not all thinking is the same? Well, the answer is simple. When you think about a huge philosophical question, it is not equal to thinking something like “I will go out to eat today”. What do I mean? When we say that we are ‘thinking,’ in philosophy, it is almost always assumed that we are thinking of existential questions that alter and bend reality. Thinking can either be deep or shallow, and this difference matters as much as how it matters to infinity to be dependent on imagination and vice versa.<br><br>
+
+Now, all we have to do is link these ideas together. What? Is it really that hard? Let me help you: thinking can help prove that imagination is infinite, which helps to prove that reality can bend through the hypothetical and infinite thinking. What this basically says is that if infinity is just reality in disguise, then the only thing stopping us from existing is the imaginative thinking of ours. Thus, we have (somewhat) proved that reality is our infinite thinking, and the only way to make it finite, or to stop it, is to destroy imagination all by itself.</h3>
+<br><hr><br>
+<h1>The Neutrality of Existence</h1><br><br>
+<h3>Death, or life, existence is the most neutral thing in the whole world that you might not even be aware of. First, we have to look at what existence is, then we will go to life and death and how these two are canceling each other to create a neutral world.<br><br>
+
+Existence is the state of having being or reality in contrast to non existence and nonbeing. Existence is often contrasted with essence: the essence of an entity is its essential features or qualities, which can be understood even if one does not know whether the entity exists. Basically, existence means to live. It means to survive as a person in this universe. We need to know the meaning of existence to fully support our theory later.<br><br>
+
+Death is neutral. How is it neutral? Let us look at it from a standpoint. Death is said to be the worst experience occurring in a human’s life, whether it is of their own, or someone else’s that they experience. How, and why? We often associate it with losing a loved one, or something similar, just like that. Everyone is said to be afraid of death. However, no one is afraid of death. Yes, the idea does sound ridiculous at first, but taken into deep context, we aren’t scared of death. We are scared of losing everything we value. We are scared that after we perish, our loved ones will make mistakes, making them lose their life, too.<br><br>
+
+But what does death even do? It erases our mistakes, our regrets, our unfinished businesses, or at least neutralizes them. It does something that we would want to do. However, fixing mistakes at the cost of a life is the worst thought anyone can ever have. Sure, some mistakes will help your loved ones, but this text shouldn’t be taken lightheartedly.<br><br>
+
+Now, let us think a little deeper. What is underneath death? No, death is not the worst thing possible. Things worse than death include our past mistakes, regrets, etc. These things are worse than death themselves. So what is death? Now that we know that we aren’t really scared of it, just scared for our loved ones, what really is it? Death is nothing. Let me explain… 0, is said to be nothing. But, in order for it to exist, it needs to be something, right? Technically, yes, and 0 is something. It is neutral, it has positive integers(1, 2, 3…) above it and negative integers(-1, -2, -3…) below it. In essence, it is neutral, not really “nothing”.<br><br>
+
+Now, what does it have to do with death? Well, death is also neutral. It has good memories, birth, and loved ones above it, and it has our past mistakes and regrets under it. This single-handedly proves that death is neutral, just like zero, neither positive, nor negative; it is just universally accepted.<br><br>
+
+Wherever there is death, there is birth, it just cancels out, neutral. Earlier, we established that existence means to live, and this just proves that existence is neutral. Every force of this universe is cancelled out, thus making this world neutral.</h3>
+<br><hr><br>
+<h1>How The String Theory and The Quantum Field Theory Complement Each Other:-</h1>
+
+<h3>
+In this paper, we will be talking about how String Theory and QFT(Quantum Field Theory) can complement each other, even if it seems like they don’t. Before diving deep, we shall first know what String Theory and QFT really are. Understanding what these really are, helps us to better understand and reason as to how they can contradict or complement. This paper will show that although there are differences between these two, and are very non-intuitive and can be quite contradicting, these can be complementing, and helping us understand our world better, and perhaps even faster.
+<br><br>
+
+String theory, in particle physics, a theory that attempts to merge quantum mechanics with Albert Einstein’s general theory of relativity. The name string theory comes from the modeling of subatomic particles as tiny one-dimensional “stringlike” entities rather than the more conventional approach in which they are modeled as zero-dimensional point particles (source: Britannica). In this theory, the smallest particles are supposedly made up of strings, sometimes referred to as “waves”. These strings are then shown in graphs by even more strings. In Quantum Physics, when data is given in waves, it means that the higher the “height” or amplitude, the more chances of that particle being present at that spot. So, whenever data reveals a wave, it shows the probabilities of strings, or “waves” being at certain spots of the area of measurement. For the rest of the article, the only necessary information needed is that the most elementary particles(subatomic particles) are in the form of strings.
+<br><br>
+
+Quantum Field Theory (QFT) is one of the foundational pillars of modern physics, providing a framework to understand how particles, energy, and forces emerge from more fundamental entities known as fields. Unlike classical mechanics, where objects exist as discrete entities in space and interact directly, QFT posits that the universe is composed of continuous fields that permeate every point in spacetime. At each spacetime point, these fields have specific values or, more precisely, quantum operators. Particles, the entities we can detect and measure, are not fundamental; they arise as quantized excitations of these fields. This perspective radically shifts our understanding of matter and energy: rather than being fundamental substances themselves, particles are manifestations of field dynamics. This changes things when it comes to complimenting String Theory with QFT.
+<br><br>
+
+In String Theory, “waves” mean the strings that are elementary to subatomic particles. However, in QFT, excitations in these fields are what we often conceptualize as waves. In String Theory, the “strings”, or waves are the particles themselves. They cannot “co-exist” with QFT’s fields. In standard Quantum Physics, waves are used to represent data and observations in graphs. If one adopts String Theory as the deeper theory, we can absolutely try to understand how both—String Theory and QFT—complement each other.
+<br><br>
+
+When String Theory is adopted as something deeper than QFT, we can then refer to its particles as “strings” for simplifications, and “waves” for the fields in QFT. In some form of data, strings can be shown as excitations in the form of waves in fields. However, as discussed earlier, we only have a probability that some particular string is somewhere in a measurement area. We could then do that math and find out one position for this one particle, and with that, we have officially merged both String Theory and QFT, into one form of data.
+<br><br>
+
+In conclusion, to complement these contradicting theories, one must accept String Theory as a greater theory, and shall proceed to finally merge these 2, into one form of data.
+</h3>
+
+<br><hr><br>
+<h1>Why “Stats” Don’t Tell the Full Story in Sports:-</h1>
+
+<h3>
+Think about your favorite sport… It could be soccer, motorsports, football, baseball, hockey, basketball, fencing, anything. Now think about your favorite player. Think of why you like him/her more than others. Most of the time, people think of their favorite player as the best, and usually, the best is the most popular. What is categorized as “best”? You’re in luck, because that is what I’m going to talk about today.
+<br><br>
+
+In soccer, the debate is between Messi, and Ronaldo. In Formula 1, it is between Schumaker, Hamilton, and Verstappen. In football, it is undeniably Tom Brady. In basketball, it is between LeBron and Jordan. Why? These players are considered to be the best because of their skill, right? Not exactly. These sportspeople have some of the best stats in their respective sports. They are considered the best, because they look the best on paper. People debate that Muhammad Ali is the best boxer of all time, when people debate on Usyk as well. Some debate that it is Anthony Joshua. Anthony Joshua doesn’t have the best stats (although he does have impressive stats).
+<br><br>
+
+Why do people debate that Joshua is better than Usyk or even Ali? Eye test. What is the eye test, you may ask, and I have a good answer to that. The eye test is a process of watching athletes in their sports and determining talents by how good or impressive or beautifully they play their sport. Scouts use the eye test to find the best players for their team, and this is the reason why the best isn’t usually signed. Stats, especially in sports like soccer or motorsports, don’t mean much. They do mean a lot, however how good a player plays are never determined entirely by his or her stats. A soccer player might have brilliant defending, yet not many clean sheets. A driver might have the best driving style, yet not the most wins.
+<br><br>
+
+One scout said: “A player needs to be seen in person because there is way more to a player than data and analytics.” Another added that data “helps validate what I already see with my eyes,” implying the eye test is foundational. Stats are helpful, but how the stats are earned, usually matters more. Does the eye test always find the best talent? No, not always. However, it is very beneficial to scouts and is also a giant reason why scouts still look at the athletes in person, rather than just relying on stats.
+<br><br>
+
+The eye test is the most foundational skill a scout can ever have, and that has dictated many of the recent signings in sports. Statistics give scouts the data to really know whether they can trust the athlete to be consistent or not, but it really is the eye test that dictates most. It is never that one method is better than the other, however it is more that the eye test can complement statistics, and vice versa. The “best” categorization can vary from person to person, or scout to scout, but it is never the same for everyone.
+</h3>
+<br><hr><br>
+<h3>For getting enlightened, your reward is my poor poetry:</h3>
+<br>
+<h3>
+The Tail of The Weakling<br><br>
+
+Isn’t it fascinating<br>
+The tale of the weakling.<br>
+What did he do?<br>
+That made me “ew”.<br><br>
+
+He wasn’t bad<br>      
+He was just sad;<br>
+Everything to lack<br>
+Gave him an “ack”<br><br>
+
+He asked, “What is this?<br>
+Why is this?<br>
+Who made me?<br>
+What is the reality?”<br><br>
+
+Confused to eternity,<br>
+Made him filthy.<br>
+He questioned existence,<br>
+Making him tense.<br><br>
+
+But sooner he realized<br>
+That he wasn’t precise.<br>
+He wasn’t efficient<br>
+He was just lenient.<br><br>
+
+That got him to do<br>
+A lot of work that<br>
+Many wouldn’t do,<br>
+But he knew he needed that.<br><br>
+
+Almost zero competition,<br>
+Which was a giant motivation.<br>
+He could win this,<br>
+Was his hypothesis.<br><br>
+
+He found an answer<br>
+That many would stutter<br>
+To talk about it,<br>
+But he did it.<br><br>
+
+Sooner, he got more<br>
+This made his reputation roar.<br>
+He did the impossible<br>
+By making it possible<br>
+
+Dedication,<br>
+Was his medication,<br>
+To get more<br>
+Of his roar<br><br>
+
+He accomplished a lot<br>
+Making anyone go “Oh mein gott”<br>
+He stood out<br>
+Not by clout,<br><br>
+
+But by work he contributed<br>
+That got him reputed,<br>
+More and more,<br>
+Building the lore.<br><br>
+
+All he did was thinking,<br>
+Which was everything<br>
+He always gave,<br>
+Making him brave.<br><br>
+
+His story is fascinating,<br>
+Of just thinking,<br>
+What a greek could achieve<br>
+Which made everyone leave.<br><br>
+
+Leave did many<br>
+But only the field of philosophy.<br>
+He was very good, indeed<br>
+Made himself lead.<br><br>
+
+And soon did he die,<br>
+His work did fly.<br>
+He was a legend<br>
+And it was the end.<br><br>
+
+This inspired many,<br>
+Even the tiny.<br>
+Everyone with his ideas would grow…<br>
+After all, he was Plato.
+</h3>
+<br><hr><br>
+
+</body>
+    </html>
